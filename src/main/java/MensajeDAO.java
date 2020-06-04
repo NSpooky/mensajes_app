@@ -29,7 +29,7 @@ public class MensajeDAO {
         PreparedStatement ps = null;
         ResultSet rs = null;
         try(Connection conexion = db_connect.get_connetion()) {
-            String query = "SELECT m.id, m.mensaje, m.fecha, u.nombre_completo FROM mensajes m JOIN u ON usuarios u ON m.id = u.id";
+            String query = "SELECT m.id, m.mensaje, m.fecha, u.nombre_completo FROM mensajes m JOIN usuarios u ON m.id = u.id";
             ps = conexion.prepareStatement(query);
             rs = ps.executeQuery();
 
