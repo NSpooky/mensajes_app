@@ -7,9 +7,6 @@ public class MensajeService {
         System.out.println("Escribe tu mensaje: ");
         String mensaje = sc.nextLine();
 
-        System.out.println("Tu nombre:");
-        String nombre = sc.nextLine();
-
         Mensaje el_mensaje = new Mensaje(mensaje, usuario.getId_usuario());
 
         MensajeDAO.crearMensajeDB(el_mensaje);
