@@ -10,5 +10,4 @@ public class Inicio {
             System.out.println(e);
         }
     }
-
 }
